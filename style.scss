@@ -15,9 +15,18 @@ h2,
 h3 {
   font-family: "Inter", sans-serif;
 }
-h2 {
-  align-items:flex-start;
-  margin: 15px;
+
+
+/* mixins */
+
+@mixin forma {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@mixin fontNombre {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Header */
@@ -70,31 +79,44 @@ header {
 
 main {
   margin: auto;
-  
+  h2 {
+    margin: 20px 0 20px 15px;
+    @include fontNombre();
+  }
   .vinilos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include forma();
     padding: 5px;
     margin: 5px;
+    
     img {
-      width: 50%;
+      width: 200px;
+    }
+    .nombre {
+      @include fontNombre();
     }
   }
 
   .libros {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include forma();
     margin:5px;
     img {
       width: 200px;
     }
   }
   .memorabilia {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include forma();
+    img {
+      width: 50%;
+    }
+  }
+  .argenblues {
+    @include forma();
+    img {
+      width: 50%;
+    }
+  }
+  .show {
+    @include forma();
     img {
       width: 50%;
     }

@@ -10,13 +10,7 @@ h3 {
   font-family: "Inter", sans-serif;
 }
 
-h2 {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 15px;
-}
-
+/* mixins */
 /* Header */
 .logo {
   width: 50px;
@@ -75,6 +69,12 @@ main {
   margin: auto;
 }
 
+main h2 {
+  margin: 20px 0 20px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 main .vinilos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,7 +91,12 @@ main .vinilos {
 }
 
 main .vinilos img {
-  width: 50%;
+  width: 200px;
+}
+
+main .vinilos .nombre {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 main .libros {
@@ -126,6 +131,40 @@ main .memorabilia {
 }
 
 main .memorabilia img {
+  width: 50%;
+}
+
+main .argenblues {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .argenblues img {
+  width: 50%;
+}
+
+main .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .show img {
   width: 50%;
 }
 
