@@ -1,6 +1,7 @@
 /* Resets */
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
+  margin: 0;
   padding: 0;
 }
 
@@ -47,12 +48,12 @@ h3 {
 .inline-menu a {
   text-decoration: none;
   margin: 10px;
-  color: #1a2020;
+  color: #131312;
   padding-top: 5px;
 }
 
 .inline-menu a:hover {
-  color: #7d9a88;
+  color: #ccb4ab;
 }
 
 .menu {
@@ -170,5 +171,81 @@ main .show img {
 
 /* Aside */
 /* Footer */
+/* login */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.containerform {
+  background-color: #565758;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.containerform img {
+  width: 100px;
+  height: 100px;
+  margin-left: 130px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+
+.containerform h2 {
+  text-align: center;
+}
+
+.containerform input {
+  display: block;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #ccb4ab;
+  border-bottom: 2px solid #ccb4ab;
+}
+
+.containerform .check {
+  width: 15px;
+  height: 15px;
+  display: inline;
+}
+
+.containerform a {
+  text-decoration: none;
+  color: #131312;
+  margin-left: 40px;
+}
+
+.containerform a:hover {
+  color: #ccb4ab;
+}
+
+.containerform .btn {
+  width: 150px;
+  background-color: #131312;
+  color: #979699;
+  margin-top: 30px;
+  margin-left: 90px;
+}
+
+.containerform .btn:active {
+  background-color: #565758;
+  width: 130px;
+}
+
 /* Media queries */
 /*# sourceMappingURL=style.css.map */

@@ -2,14 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
+  margin: 0;
   padding: 0;
 }
 
-$light: #d5d1aa;
-$light-green: #7d9a88;
-$light-green-transparent: rgba(190, 223, 203, 0.26);
-$dark-green: #505434;
-$dark: #1a2020;
+$light-grey:  #979699;
+$light-pink:  #ccb4ab;
+$coral: #b74e34;
+$dark-grey:  #565758;
+$dark:  #131312 ;
 p,
 h2,
 h3 {
@@ -61,7 +62,7 @@ h3 {
     padding-top: 5px;
 
     &:hover {
-      color: $light-green;
+      color: $light-pink;
     }
   }
 }
@@ -127,4 +128,69 @@ main {
 
 /* Footer */
 
+/* login */
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+.containerform {
+  background-color: $dark-grey;
+  border-radius: 15px;
+  padding: 40px;
+  img {
+    width: 100px;
+    height: 100px;
+    margin-left: 130px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+  }
+  h2 {
+    text-align: center;
+  }
+  input {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: $light-pink;
+    border-bottom: 2px solid $light-pink;
+  }
+  .check {
+    width: 15px;
+    height: 15px;
+    display: inline;
+  }
+  a {
+    text-decoration: none;
+    color: $dark;
+    margin-left: 40px;
+    &:hover {
+      color: $light-pink;
+    }
+  }
+  .btn {
+    width: 150px;
+    background-color: $dark;
+    color: $light-grey;
+    margin-top: 30px;
+    margin-left: 90px;
+    &:active {
+      background-color: $dark-grey;
+      width: 130px;
+    }
+  }
+}
 /* Media queries */
+
