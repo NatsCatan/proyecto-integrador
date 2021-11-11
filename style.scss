@@ -1,0 +1,108 @@
+/* Resets */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  padding: 0;
+}
+
+$light: #d5d1aa;
+$light-green: #7d9a88;
+$light-green-transparent: rgba(190, 223, 203, 0.26);
+$dark-green: #505434;
+$dark: #1a2020;
+p,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+}
+h2 {
+  align-items:flex-start;
+  margin: 15px;
+}
+
+/* Header */
+.logo {
+  width: 50px;
+}
+.inline-menu {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px;
+
+  border-bottom: black 1.5px solid;
+  input {
+    margin: 15px;
+    border-bottom: black solid;
+  }
+  button {
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px 24px;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 20px;
+  }
+  a {
+    text-decoration: none;
+    margin: 10px;
+    color: $dark;
+    padding-top: 5px;
+
+    &:hover {
+      color: $light-green;
+    }
+  }
+}
+.menu {
+  display: none;
+}
+header {
+  img {
+    width: 95%;
+    margin: 0 15px 0;
+  }
+}
+
+/* Main */
+
+main {
+  margin: auto;
+  
+  .vinilos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 5px;
+    img {
+      width: 50%;
+    }
+  }
+
+  .libros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:5px;
+    img {
+      width: 200px;
+    }
+  }
+  .memorabilia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    img {
+      width: 50%;
+    }
+  }
+}
+
+/* Aside */
+
+/* Footer */
+
+/* Media queries */

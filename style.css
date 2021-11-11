@@ -1,0 +1,135 @@
+/* Resets */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  padding: 0;
+}
+
+p,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 15px;
+}
+
+/* Header */
+.logo {
+  width: 50px;
+}
+
+.inline-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15px;
+  border-bottom: black 1.5px solid;
+}
+
+.inline-menu input {
+  margin: 15px;
+  border-bottom: black solid;
+}
+
+.inline-menu button {
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px 24px;
+}
+
+.inline-menu li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.inline-menu a {
+  text-decoration: none;
+  margin: 10px;
+  color: #1a2020;
+  padding-top: 5px;
+}
+
+.inline-menu a:hover {
+  color: #7d9a88;
+}
+
+.menu {
+  display: none;
+}
+
+header img {
+  width: 95%;
+  margin: 0 15px 0;
+}
+
+/* Main */
+main {
+  margin: auto;
+}
+
+main .vinilos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 5px;
+  margin: 5px;
+}
+
+main .vinilos img {
+  width: 50%;
+}
+
+main .libros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 5px;
+}
+
+main .libros img {
+  width: 200px;
+}
+
+main .memorabilia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .memorabilia img {
+  width: 50%;
+}
+
+/* Aside */
+/* Footer */
+/* Media queries */
+/*# sourceMappingURL=style.css.map */
