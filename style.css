@@ -1,5 +1,14 @@
+@charset "UTF-8";
 /* Resets */
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* con fontface podemos incluir fuentes personalizadas que tengamos en nuestra máquina */
+@font-face {
+  font-family: "PLAYLIST";
+  src: url("./assets/webfonts_Playlist-Script/Playlist-Script.ttf.eot") format("eot"), url("./assets//webfonts_Playlist-Script/Playlist-Script.ttf.woff") format("woff"), url("./assets/webfonts_Playlist-Script/Playlist-Script.ttf.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -186,7 +195,7 @@ main .show img {
 }
 
 .containerform {
-  background-color: #565758;
+  border: solid 5px black;
   border-radius: 15px;
   padding: 40px;
 }
@@ -201,6 +210,9 @@ main .show img {
 
 .containerform h2 {
   text-align: center;
+  color: #131312;
+  font-family: "PLAYLIST";
+  font-size: 50px;
 }
 
 .containerform input {
@@ -209,13 +221,12 @@ main .show img {
   height: 40px;
   margin-bottom: 20px;
   padding: 0 15px;
-  border-radius: 10px;
   font-size: 18px;
   outline: none;
   border: none;
   background: transparent;
-  color: #ccb4ab;
-  border-bottom: 2px solid #ccb4ab;
+  color: #131312;
+  border-bottom: 2px solid #131312;
 }
 
 .containerform .check {
@@ -231,20 +242,24 @@ main .show img {
 }
 
 .containerform a:hover {
-  color: #ccb4ab;
+  color: #b74e34;
+}
+
+.containerform label {
+  color: #131312;
 }
 
 .containerform .btn {
   width: 150px;
   background-color: #131312;
-  color: #979699;
+  color: white;
+  border-radius: 15px;
   margin-top: 30px;
   margin-left: 90px;
 }
 
-.containerform .btn:active {
+.containerform .btn:hover {
   background-color: #565758;
-  width: 130px;
 }
 
 /* Media queries */
