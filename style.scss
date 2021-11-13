@@ -36,6 +36,7 @@ h3 {
   justify-content: space-evenly;
 }
 @mixin fontNombre {
+  margin-top: 20px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -89,10 +90,17 @@ header {
 /* Main */
 
 main {
-  margin: auto;
+  
   h2 {
     margin: 20px 0 20px 15px;
     @include fontNombre();
+  }
+  .nombre {
+    @include fontNombre();
+    width: 230px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   .vinilos {
     @include forma();
@@ -101,35 +109,46 @@ main {
     
     img {
       width: 200px;
+      height: 200px;
+      display: block;
     }
-    .nombre {
-      @include fontNombre();
-    }
+    
   }
 
   .libros {
     @include forma();
-    margin:5px;
-    img {
-      width: 200px;
-    }
+    padding: 15px;
+    margin: 15px;
+    
+     img {
+       width: 200px;
+       height: 200px;
+     }
+  
+  
   }
   .memorabilia {
     @include forma();
+    padding: 5px;
+    margin: 5px;
     img {
-      width: 50%;
+      width: 200px;
+      height: 200px;
+
     }
   }
   .argenblues {
     @include forma();
     img {
-      width: 50%;
+      width: 200px;
+      height: 200px;
     }
   }
   .show {
     @include forma();
     img {
-      width: 50%;
+      width: 200px;
+      height: 200px;
     }
   }
 }

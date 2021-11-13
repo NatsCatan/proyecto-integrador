@@ -75,14 +75,21 @@ header img {
 }
 
 /* Main */
-main {
-  margin: auto;
-}
-
 main h2 {
   margin: 20px 0 20px 15px;
+  margin-top: 20px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+main .nombre {
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 230px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 main .vinilos {
@@ -102,11 +109,8 @@ main .vinilos {
 
 main .vinilos img {
   width: 200px;
-}
-
-main .vinilos .nombre {
-  font-weight: bold;
-  text-transform: uppercase;
+  height: 200px;
+  display: block;
 }
 
 main .libros {
@@ -120,11 +124,13 @@ main .libros {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 5px;
+  padding: 15px;
+  margin: 15px;
 }
 
 main .libros img {
   width: 200px;
+  height: 200px;
 }
 
 main .memorabilia {
@@ -138,10 +144,13 @@ main .memorabilia {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 5px;
+  margin: 5px;
 }
 
 main .memorabilia img {
-  width: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 main .argenblues {
@@ -158,7 +167,8 @@ main .argenblues {
 }
 
 main .argenblues img {
-  width: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 main .show {
@@ -175,7 +185,8 @@ main .show {
 }
 
 main .show img {
-  width: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 /* Aside */
