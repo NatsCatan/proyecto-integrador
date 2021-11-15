@@ -48,9 +48,12 @@ h3 {
   
 }
 
+
+
 /* Header */
 .logo {
   width: 50px;
+  height: 50px;
 }
 .inline-menu {
   display: flex;
@@ -61,14 +64,22 @@ h3 {
   border-bottom: black 1.5px solid;
   input {
     margin: 15px;
-    border-bottom: black solid;
+    border: none;
+    border-bottom: black 1.5px solid;
   }
   button {
-    font-size: 15px;
-    border-radius: 5px;
-    padding: 10px 24px;
+      width: 80px;
+      background-color: $dark;
+      color: white;
+      border-radius: 15px;
+      margin: 15px 20px 15px 30px;   
+     &:hover {
+        background-color: $dark-grey;
+        color: $dark;
+       
+     }
+    
   }
-
   li {
     display: inline-block;
     font-size: 20px;
@@ -264,28 +275,35 @@ main {
     a {
       text-decoration: none;
       color: $dark;
-      margin-left: 40px;
+      margin-left: 20px;
       &:hover {
         color: $coral;
       }
     }
     label {
       color: $dark;
+      
     }
-    .btn {
-      width: 150px;
-      background-color: $dark;
-      color: white;
-      border-radius: 15px;
-      margin-top: 30px;
-      margin-left: 90px;
-      &:hover {
-        background-color: $dark-grey;
-        
-      }
+    .botones {
+      display: flex;
+      .btn {
+         width: 150px;
+         background-color: $dark;
+         color: white;
+         border-radius: 15px;
+         margin-top: 10px;
+         margin-left: 20px;
+         &:hover {
+           background-color: $dark-grey;
+           
+         }
+       }
     }
+    }
+      
+   
   }
-}
+
 
 /* Footer */
 

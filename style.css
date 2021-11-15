@@ -24,6 +24,7 @@ h3 {
 /* Header */
 .logo {
   width: 50px;
+  height: 50px;
 }
 
 .inline-menu {
@@ -40,13 +41,21 @@ h3 {
 
 .inline-menu input {
   margin: 15px;
-  border-bottom: black solid;
+  border: none;
+  border-bottom: black 1.5px solid;
 }
 
 .inline-menu button {
-  font-size: 15px;
-  border-radius: 5px;
-  padding: 10px 24px;
+  width: 80px;
+  background-color: #131312;
+  color: white;
+  border-radius: 15px;
+  margin: 15px 20px 15px 30px;
+}
+
+.inline-menu button:hover {
+  background-color: #565758;
+  color: #131312;
 }
 
 .inline-menu li {
@@ -317,7 +326,7 @@ main .show img {
 .container .containerForm a {
   text-decoration: none;
   color: #131312;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .container .containerForm a:hover {
@@ -328,16 +337,22 @@ main .show img {
   color: #131312;
 }
 
-.container .containerForm .btn {
+.container .containerForm .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .containerForm .botones .btn {
   width: 150px;
   background-color: #131312;
   color: white;
   border-radius: 15px;
-  margin-top: 30px;
-  margin-left: 90px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
-.container .containerForm .btn:hover {
+.container .containerForm .botones .btn:hover {
   background-color: #565758;
 }
 
