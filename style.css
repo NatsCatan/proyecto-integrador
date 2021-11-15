@@ -189,8 +189,76 @@ main .show img {
   height: 200px;
 }
 
-/* Aside */
-/* Footer */
+.containerContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 40vh;
+  padding-left: 20px;
+  margin: 20px;
+  border: solid 5px black;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+.containerContact img {
+  width: 120px;
+  height: 120px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.containerContact h2 {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.containerContact h2 .especial {
+  color: #131312;
+  font-family: "PLAYLIST";
+  font-size: 50px;
+}
+
+.containerContact input {
+  display: block;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #131312;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #131312;
+  border-bottom: 2px solid #131312;
+}
+
+.containerContact label {
+  color: #131312;
+}
+
+.containerContact .btn {
+  width: 150px;
+  background-color: #131312;
+  color: #ccb4ab;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+.containerContact .btn:hover {
+  background-color: #565758;
+  color: #131312;
+}
+
 /* login */
 .container {
   display: -webkit-box;
@@ -205,13 +273,13 @@ main .show img {
   height: 100vh;
 }
 
-.containerform {
+.container .containerForm {
   border: solid 5px black;
   border-radius: 15px;
   padding: 40px;
 }
 
-.containerform img {
+.container .containerForm img {
   width: 100px;
   height: 100px;
   margin-left: 130px;
@@ -219,14 +287,14 @@ main .show img {
   border-radius: 50px;
 }
 
-.containerform h2 {
+.container .containerForm h2 {
   text-align: center;
   color: #131312;
   font-family: "PLAYLIST";
   font-size: 50px;
 }
 
-.containerform input {
+.container .containerForm input {
   display: block;
   width: 300px;
   height: 40px;
@@ -240,27 +308,27 @@ main .show img {
   border-bottom: 2px solid #131312;
 }
 
-.containerform .check {
+.container .containerForm .check {
   width: 15px;
   height: 15px;
   display: inline;
 }
 
-.containerform a {
+.container .containerForm a {
   text-decoration: none;
   color: #131312;
   margin-left: 40px;
 }
 
-.containerform a:hover {
+.container .containerForm a:hover {
   color: #b74e34;
 }
 
-.containerform label {
+.container .containerForm label {
   color: #131312;
 }
 
-.containerform .btn {
+.container .containerForm .btn {
   width: 150px;
   background-color: #131312;
   color: white;
@@ -269,8 +337,90 @@ main .show img {
   margin-left: 90px;
 }
 
-.containerform .btn:hover {
+.container .containerForm .btn:hover {
   background-color: #565758;
+}
+
+/* Footer */
+footer {
+  padding: 40px;
+}
+
+footer .especial {
+  color: #131312;
+  font-family: "PLAYLIST";
+  font-size: 50px;
+}
+
+footer .containerFooter {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-top: solid 1.5px black;
+}
+
+footer .nombre {
+  width: 50%;
+  margin-top: 40px;
+}
+
+footer .navegacionFooter {
+  width: 40%;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+footer .navegacionFooter li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+}
+
+footer .navegacionFooter a {
+  text-decoration: none;
+  margin: 10px;
+  color: #131312;
+  padding-top: 5px;
+}
+
+footer .navegacionFooter a:hover {
+  color: #ccb4ab;
+}
+
+footer .contactoFooter {
+  width: 50%;
+  margin-top: 20px;
+}
+
+footer .contactoFooter li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 40px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+footer .redesFooter {
+  width: 30%;
+  margin-top: 20px;
+}
+
+footer .redesFooter img {
+  margin-right: 10px;
+  width: 40px;
 }
 
 /* Media queries */

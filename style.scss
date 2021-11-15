@@ -40,6 +40,13 @@ h3 {
   font-weight: bold;
   text-transform: uppercase;
 }
+@mixin logoNombre {
+  
+    color: $dark;
+    font-family: "PLAYLIST";
+    font-size: 50px;
+  
+}
 
 /* Header */
 .logo {
@@ -153,9 +160,63 @@ main {
   }
 }
 
-/* Aside */
 
-/* Footer */
+// /* Contact */
+
+.containerContact {
+  @include forma();
+  height: 40vh;
+  padding-left: 20px;
+  margin: 20px;
+    border: solid 5px black;
+    border-radius: 15px;
+    padding: 50px;
+    img {
+      width: 120px;
+      height: 120px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+     h2 {
+       display:block;
+       text-align:center;
+       margin-bottom: 20px;
+       .especial {
+         @include logoNombre();
+       }
+     }
+     input {
+       display: block;
+       width: 300px;
+       height: 40px;
+       margin-bottom: 20px;
+       padding: 0 20px;
+       font-size: 18px;
+       color: $dark;
+       outline: none;
+       border: none;
+       background: transparent;
+       color: $dark;
+       border-bottom: 2px solid $dark
+     }
+    
+     label {
+       color: $dark;
+     }
+     .btn {
+       width: 150px;
+       background-color: $dark;
+       color: $light-pink;
+       border-radius: 15px;
+       margin-left: 20px;      
+      &:hover {
+         background-color: $dark-grey;
+         color: $dark;
+        
+      }
+     }
+  }
+ 
 
 /* login */
 
@@ -165,67 +226,130 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  
+  .containerForm {
+    border: solid 5px black;
+    border-radius: 15px;
+    padding: 40px;
+    img {
+      width: 100px;
+      height: 100px;
+      margin-left: 130px;
+      margin-bottom: 20px;
+      border-radius: 50px;
+    }
+    h2 {
+      text-align: center;
+      color: $dark;
+      font-family: "PLAYLIST";
+      font-size: 50px;
+    }
+    input {
+      display: block;
+      width: 300px;
+      height: 40px;
+      margin-bottom: 20px;
+      padding: 0 15px;
+      font-size: 18px;
+      outline: none;
+      border: none;
+      background: transparent;
+      color: $dark;
+      border-bottom: 2px solid $dark;
+    }
+    .check {
+      width: 15px;
+      height: 15px;
+      display: inline;
+    }
+    a {
+      text-decoration: none;
+      color: $dark;
+      margin-left: 40px;
+      &:hover {
+        color: $coral;
+      }
+    }
+    label {
+      color: $dark;
+    }
+    .btn {
+      width: 150px;
+      background-color: $dark;
+      color: white;
+      border-radius: 15px;
+      margin-top: 30px;
+      margin-left: 90px;
+      &:hover {
+        background-color: $dark-grey;
+        
+      }
+    }
+  }
 }
 
-.containerform {
-  border: solid 5px black;
-  border-radius: 15px;
+/* Footer */
+
+footer {
+  
   padding: 40px;
-  img {
-    width: 100px;
-    height: 100px;
-    margin-left: 130px;
-    margin-bottom: 20px;
-    border-radius: 50px;
+  .especial {
+    @include logoNombre();
   }
-  h2 {
-    text-align: center;
-    color: $dark;
-    font-family: "PLAYLIST";
-    font-size: 50px;
+  .containerFooter {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-top: solid 1.5px black;
   }
-  input {
-    display: block;
-    width: 300px;
-    height: 40px;
-    margin-bottom: 20px;
-    padding: 0 15px;
-    font-size: 18px;
-    outline: none;
-    border: none;
-    background: transparent;
-    color: $dark;
-    border-bottom: 2px solid $dark;
+  .nombre {
+    width: 50%;
+    margin-top: 40px;
   }
-  .check {
-    width: 15px;
-    height: 15px;
-    display: inline;
-  }
-  a {
-    text-decoration: none;
-    color: $dark;
-    margin-left: 40px;
-    &:hover {
-      color: $coral;
+  .navegacionFooter {
+    width: 40%;
+    margin-left: 15px;
+    margin-top: 20px;
+    li {
+      display: flex;
+      font-size: 15px;
     }
+    a {
+      text-decoration: none;
+      margin: 10px;
+      color: $dark;
+      padding-top: 5px;
+  
+      &:hover {
+        color: $light-pink;
+      }
+    }
+    
   }
-  label {
-    color: $dark;
+  .contactoFooter {
+    width: 50%;
+    margin-top: 20px;
+    
+    
+     li {
+       display: flex;
+       justify-content: space-between;
+       line-height: 40px;
+       font-size: 15px;
+       margin-top: 10px;
+     }
   }
-  .btn {
-    width: 150px;
-    background-color: $dark;
-    color: white;
-    border-radius: 15px;
-    margin-top: 30px;
-    margin-left: 90px;
-    &:hover {
-      background-color: $dark-grey;
-      
+  .redesFooter {
+    width: 30%;
+    margin-top: 20px;
+    img {
+      margin-right: 10px;
+      width: 40px;
     }
   }
 }
+
+
+
 /* Media queries */
 
