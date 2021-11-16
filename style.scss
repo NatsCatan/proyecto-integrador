@@ -48,7 +48,20 @@ h3 {
   
 }
 
+@mixin btn {
 
+    width: 150px;
+    background-color: $dark;
+    color: white;
+    border-radius: 15px;
+      
+   &:hover {
+      background-color: $dark-grey;
+      color: $dark;
+     
+   }
+
+}
 
 /* Header */
 .logo {
@@ -120,17 +133,21 @@ main {
     text-overflow: ellipsis;
     overflow: hidden;
   }
+  
   .vinilos {
     @include forma();
     padding: 5px;
     margin: 5px;
-    
+        
     img {
       width: 200px;
       height: 200px;
       display: block;
     }
+    button {
+      @include btn();
     
+  }
   }
 
   .libros {
@@ -142,9 +159,10 @@ main {
        width: 200px;
        height: 200px;
      }
-  
-  
+     button {
+      @include btn();
   }
+}
   .memorabilia {
     @include forma();
     padding: 5px;
@@ -154,23 +172,31 @@ main {
       height: 200px;
 
     }
+    button {
+      @include btn();
   }
+}
   .argenblues {
     @include forma();
     img {
       width: 200px;
       height: 200px;
     }
+    button {
+      @include btn();
   }
+}
   .show {
     @include forma();
     img {
       width: 200px;
       height: 200px;
     }
-  }
+    button {
+      @include btn();
+    }
 }
-
+}
 
 // /* Contact */
 
@@ -217,7 +243,7 @@ main {
      .btn {
        width: 150px;
        background-color: $dark;
-       color: $light-pink;
+       color: white;
        border-radius: 15px;
        margin-left: 20px;      
       &:hover {

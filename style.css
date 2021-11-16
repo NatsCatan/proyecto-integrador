@@ -122,6 +122,18 @@ main .vinilos img {
   display: block;
 }
 
+main .vinilos button {
+  width: 150px;
+  background-color: #131312;
+  color: white;
+  border-radius: 15px;
+}
+
+main .vinilos button:hover {
+  background-color: #565758;
+  color: #131312;
+}
+
 main .libros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,6 +152,18 @@ main .libros {
 main .libros img {
   width: 200px;
   height: 200px;
+}
+
+main .libros button {
+  width: 150px;
+  background-color: #131312;
+  color: white;
+  border-radius: 15px;
+}
+
+main .libros button:hover {
+  background-color: #565758;
+  color: #131312;
 }
 
 main .memorabilia {
@@ -162,6 +186,18 @@ main .memorabilia img {
   height: 200px;
 }
 
+main .memorabilia button {
+  width: 150px;
+  background-color: #131312;
+  color: white;
+  border-radius: 15px;
+}
+
+main .memorabilia button:hover {
+  background-color: #565758;
+  color: #131312;
+}
+
 main .argenblues {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,6 +216,18 @@ main .argenblues img {
   height: 200px;
 }
 
+main .argenblues button {
+  width: 150px;
+  background-color: #131312;
+  color: white;
+  border-radius: 15px;
+}
+
+main .argenblues button:hover {
+  background-color: #565758;
+  color: #131312;
+}
+
 main .show {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,6 +244,18 @@ main .show {
 main .show img {
   width: 200px;
   height: 200px;
+}
+
+main .show button {
+  width: 150px;
+  background-color: #131312;
+  color: white;
+  border-radius: 15px;
+}
+
+main .show button:hover {
+  background-color: #565758;
+  color: #131312;
 }
 
 .containerContact {
@@ -258,7 +318,7 @@ main .show img {
 .containerContact .btn {
   width: 150px;
   background-color: #131312;
-  color: #ccb4ab;
+  color: white;
   border-radius: 15px;
   margin-left: 20px;
 }
