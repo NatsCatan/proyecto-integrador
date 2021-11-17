@@ -71,7 +71,11 @@ h3 {
 }
 
 .inline-menu a:hover {
-  color: #ccb4ab;
+  color: #979699;
+}
+
+.inline-menu a .btn:hover {
+  color: #979699;
 }
 
 .menu {
@@ -90,7 +94,12 @@ main {
 }
 
 main h2 {
-  display: none;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 main h3 {
@@ -538,12 +547,17 @@ footer .navegacionFooter a {
 }
 
 footer .navegacionFooter a:hover {
-  color: #ccb4ab;
+  color: #979699;
 }
 
 footer .contactoFooter {
-  width: 50%;
+  width: 40%;
   margin-top: 20px;
+}
+
+footer .contactoFooter h3 {
+  padding-left: 30px;
+  padding-bottom: 10px;
 }
 
 footer .contactoFooter li {
@@ -553,9 +567,9 @@ footer .contactoFooter li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 40px;
+  line-height: 50px;
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 footer .redesFooter {

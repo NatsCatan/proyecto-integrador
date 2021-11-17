@@ -64,13 +64,12 @@ h3 {
 }
 @mixin imagen {
   width: 200px;
-      height: 200px;
-      &:hover {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
-      }
-    }
-
+  height: 200px;
+  &:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
 
 /* Header */
 .logo {
@@ -82,13 +81,13 @@ h3 {
   align-content: space-between;
   flex-wrap: wrap;
   margin: 15px;
-
   border-bottom: black 1.5px solid;
   input {
     margin: 15px;
     border: none;
     border-bottom: black 1.5px solid;
   }
+
   button {
     width: 80px;
     background-color: $dark;
@@ -111,7 +110,12 @@ h3 {
     padding-top: 5px;
 
     &:hover {
-      color: $light-pink;
+      color: $light-grey;
+    }
+    .btn {
+      &:hover {
+        color: $light-grey;
+      }
     }
   }
 }
@@ -129,7 +133,8 @@ header {
 
 main {
   h2 {
-    display: none;
+    writing-mode: vertical-lr;
+    @include fontNombre();
   }
   h3 {
     @include fontNombre();
@@ -380,20 +385,25 @@ footer {
       padding-top: 5px;
 
       &:hover {
-        color: $light-pink;
+        color: $light-grey;
       }
     }
   }
   .contactoFooter {
-    width: 50%;
+    width: 40%;
     margin-top: 20px;
+
+    h3 {
+      padding-left: 30px;
+      padding-bottom: 10px;
+    }
 
     li {
       display: flex;
       justify-content: space-between;
-      line-height: 40px;
+      line-height: 50px;
       font-size: 15px;
-      margin-top: 10px;
+      margin-top: 5px;
     }
   }
   .redesFooter {
