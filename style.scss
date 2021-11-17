@@ -4,10 +4,12 @@
 /* con fontface podemos incluir fuentes personalizadas que tengamos en nuestra máquina */
 @font-face {
   font-family: "PLAYLIST";
-  src:
-      url("./assets/webfonts_Playlist-Script/Playlist-Script.ttf.eot") format("eot"),
-      url("./assets//webfonts_Playlist-Script/Playlist-Script.ttf.woff") format("woff"),
-      url("./assets/webfonts_Playlist-Script/Playlist-Script.ttf.svg") format("svg");
+  src: url("./assets/webfonts_Playlist-Script/Playlist-Script.ttf.eot")
+      format("eot"),
+    url("./assets//webfonts_Playlist-Script/Playlist-Script.ttf.woff")
+      format("woff"),
+    url("./assets/webfonts_Playlist-Script/Playlist-Script.ttf.svg")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,17 +18,16 @@
   padding: 0;
 }
 
-$light-grey:  #979699;
-$light-pink:  #ccb4ab;
+$light-grey: #979699;
+$light-pink: #ccb4ab;
 $coral: #b74e34;
-$dark-grey:  #565758;
-$dark:  #131312 ;
+$dark-grey: #565758;
+$dark: #131312;
 p,
 h2,
 h3 {
   font-family: "Inter", sans-serif;
 }
-
 
 /* mixins */
 
@@ -41,27 +42,35 @@ h3 {
   text-transform: uppercase;
 }
 @mixin logoNombre {
-  
-    color: $dark;
-    font-family: "PLAYLIST";
-    font-size: 50px;
-  
+  color: $dark;
+  font-family: "PLAYLIST";
+  font-size: 50px;
 }
 
+@mixin size {
+  margin: 15px;
+  padding: 15px;
+}
 @mixin btn {
+  width: 150px;
+  background-color: $dark;
+  color: white;
+  border-radius: 15px;
 
-    width: 150px;
-    background-color: $dark;
-    color: white;
-    border-radius: 15px;
-      
-   &:hover {
-      background-color: $dark-grey;
-      color: $dark;
-     
-   }
-
+  &:hover {
+    background-color: $dark-grey;
+    color: $dark;
+  }
 }
+@mixin imagen {
+  width: 200px;
+      height: 200px;
+      &:hover {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+      }
+    }
+
 
 /* Header */
 .logo {
@@ -81,17 +90,15 @@ h3 {
     border-bottom: black 1.5px solid;
   }
   button {
-      width: 80px;
-      background-color: $dark;
-      color: white;
-      border-radius: 15px;
-      margin: 15px 20px 15px 30px;   
-     &:hover {
-        background-color: $dark-grey;
-        color: $dark;
-       
-     }
-    
+    width: 80px;
+    background-color: $dark;
+    color: white;
+    border-radius: 15px;
+    margin: 15px 20px 15px 30px;
+    &:hover {
+      background-color: $dark-grey;
+      color: $dark;
+    }
   }
   li {
     display: inline-block;
@@ -121,9 +128,10 @@ header {
 /* Main */
 
 main {
-  
   h2 {
-    margin: 20px 0 20px 15px;
+    display: none;
+  }
+  h3 {
     @include fontNombre();
   }
   .nombre {
@@ -133,69 +141,85 @@ main {
     text-overflow: ellipsis;
     overflow: hidden;
   }
-  
+  /* CARDS */
+  .cards {
+    @include forma();
+    border: 5px solid $dark;
+    border-radius: 20px;
+    margin: 10px;
+
+    .cardStyle {
+      margin: 15px;
+      padding: 20px;
+      h2 {
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+  /* ARTICLES */
+
   .vinilos {
     @include forma();
-    padding: 5px;
-    margin: 5px;
-        
+    @include size();
+
     img {
-      width: 200px;
-      height: 200px;
-      display: block;
+      @include imagen();
     }
     button {
       @include btn();
-    
-  }
+    }
   }
 
   .libros {
     @include forma();
-    padding: 15px;
-    margin: 15px;
-    
-     img {
-       width: 200px;
-       height: 200px;
-     }
-     button {
+    @include size();
+
+    img {
+      @include imagen();
+    }
+    button {
       @include btn();
+    }
   }
-}
   .memorabilia {
     @include forma();
-    padding: 5px;
-    margin: 5px;
+    @include size();
     img {
-      width: 200px;
-      height: 200px;
-
+      @include imagen();
     }
+
     button {
       @include btn();
+    }
   }
-}
   .argenblues {
     @include forma();
+    @include size();
     img {
-      width: 200px;
-      height: 200px;
+      @include imagen();
     }
     button {
       @include btn();
+    }
   }
-}
   .show {
     @include forma();
+    @include size();
     img {
-      width: 200px;
-      height: 200px;
+      @include imagen();
     }
     button {
       @include btn();
     }
-}
+  }
 }
 
 // /* Contact */
@@ -205,58 +229,55 @@ main {
   height: 40vh;
   padding-left: 20px;
   margin: 20px;
-    border: solid 5px black;
-    border-radius: 15px;
-    padding: 50px;
-    img {
-      width: 120px;
-      height: 120px;
-      margin-left: 20px;
-      margin-bottom: 20px;
-    }
-     h2 {
-       display:block;
-       text-align:center;
-       margin-bottom: 20px;
-       .especial {
-         @include logoNombre();
-       }
-     }
-     input {
-       display: block;
-       width: 300px;
-       height: 40px;
-       margin-bottom: 20px;
-       padding: 0 20px;
-       font-size: 18px;
-       color: $dark;
-       outline: none;
-       border: none;
-       background: transparent;
-       color: $dark;
-       border-bottom: 2px solid $dark
-     }
-    
-     label {
-       color: $dark;
-     }
-     .btn {
-       width: 150px;
-       background-color: $dark;
-       color: white;
-       border-radius: 15px;
-       margin-left: 20px;      
-      &:hover {
-         background-color: $dark-grey;
-         color: $dark;
-        
-      }
-     }
+  border: solid 5px black;
+  border-radius: 15px;
+  padding: 50px;
+  img {
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
- 
+  h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    .especial {
+      @include logoNombre();
+    }
+  }
+  input {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: $dark;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: $dark;
+    border-bottom: 2px solid $dark;
+  }
+
+  label {
+    color: $dark;
+  }
+  .btn {
+    width: 150px;
+    background-color: $dark;
+    color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    &:hover {
+      background-color: $dark-grey;
+      color: $dark;
+    }
+  }
+}
 
 /* login */
-
 
 .container {
   display: flex;
@@ -308,33 +329,27 @@ main {
     }
     label {
       color: $dark;
-      
     }
     .botones {
       display: flex;
       .btn {
-         width: 150px;
-         background-color: $dark;
-         color: white;
-         border-radius: 15px;
-         margin-top: 10px;
-         margin-left: 20px;
-         &:hover {
-           background-color: $dark-grey;
-           
-         }
-       }
+        width: 150px;
+        background-color: $dark;
+        color: white;
+        border-radius: 15px;
+        margin-top: 10px;
+        margin-left: 20px;
+        &:hover {
+          background-color: $dark-grey;
+        }
+      }
     }
-    }
-      
-   
   }
-
+}
 
 /* Footer */
 
 footer {
-  
   padding: 40px;
   .especial {
     @include logoNombre();
@@ -363,25 +378,23 @@ footer {
       margin: 10px;
       color: $dark;
       padding-top: 5px;
-  
+
       &:hover {
         color: $light-pink;
       }
     }
-    
   }
   .contactoFooter {
     width: 50%;
     margin-top: 20px;
-    
-    
-     li {
-       display: flex;
-       justify-content: space-between;
-       line-height: 40px;
-       font-size: 15px;
-       margin-top: 10px;
-     }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      line-height: 40px;
+      font-size: 15px;
+      margin-top: 10px;
+    }
   }
   .redesFooter {
     width: 30%;
@@ -393,7 +406,4 @@ footer {
   }
 }
 
-
-
 /* Media queries */
-

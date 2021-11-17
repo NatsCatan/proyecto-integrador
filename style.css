@@ -84,8 +84,16 @@ header img {
 }
 
 /* Main */
+main {
+  /* CARDS */
+  /* ARTICLES */
+}
+
 main h2 {
-  margin: 20px 0 20px 15px;
+  display: none;
+}
+
+main h3 {
   margin-top: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -101,6 +109,40 @@ main .nombre {
   overflow: hidden;
 }
 
+main .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 5px solid #131312;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+main .cards .cardStyle {
+  margin: 15px;
+  padding: 20px;
+}
+
+main .cards .cardStyle h2 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main .cards .cardStyle img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+
 main .vinilos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,14 +154,18 @@ main .vinilos {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 5px;
-  margin: 5px;
+  margin: 15px;
+  padding: 15px;
 }
 
 main .vinilos img {
   width: 200px;
   height: 200px;
-  display: block;
+}
+
+main .vinilos img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 main .vinilos button {
@@ -145,13 +191,18 @@ main .libros {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 15px;
   margin: 15px;
+  padding: 15px;
 }
 
 main .libros img {
   width: 200px;
   height: 200px;
+}
+
+main .libros img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 main .libros button {
@@ -177,13 +228,18 @@ main .memorabilia {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 5px;
-  margin: 5px;
+  margin: 15px;
+  padding: 15px;
 }
 
 main .memorabilia img {
   width: 200px;
   height: 200px;
+}
+
+main .memorabilia img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 main .memorabilia button {
@@ -209,11 +265,18 @@ main .argenblues {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin: 15px;
+  padding: 15px;
 }
 
 main .argenblues img {
   width: 200px;
   height: 200px;
+}
+
+main .argenblues img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 main .argenblues button {
@@ -239,11 +302,18 @@ main .show {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin: 15px;
+  padding: 15px;
 }
 
 main .show img {
   width: 200px;
   height: 200px;
+}
+
+main .show img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 main .show button {
