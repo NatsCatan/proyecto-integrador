@@ -156,7 +156,7 @@ main {
     .cardStyle {
       margin: 15px;
       padding: 20px;
-      h2 {
+      h3 {
         font-size: 30px;
         text-align: center;
         text-transform: uppercase;
@@ -487,6 +487,11 @@ footer {
        @include btn();
      }
   }
+  .cardStyle{
+    h3 {
+      font-size: 20px;
+    }
+  }
   .vinilos {
     h2 {
       font-size: 15px;
@@ -512,4 +517,29 @@ footer {
       font-size: 15px;
   }
 }
+}
+
+@media (max-width: 768px){
+  .inline-menu {
+    display: none;
+  }
+//To Do
+  .menu {
+    margin-top: 4%;
+    display: block;
+    text-align: center;
+  li{
+    display: inline;
+    font-size: 1.5em;
+  }
+}
+  .cardStyle{
+    h3 {
+      font-size: 20px;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
 }

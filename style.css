@@ -139,7 +139,7 @@ main .cards .cardStyle {
   padding: 20px;
 }
 
-main .cards .cardStyle h2 {
+main .cards .cardStyle h3 {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -664,6 +664,9 @@ footer .redesFooter img {
     background-color: #565758;
     color: #131312;
   }
+  .cardStyle h3 {
+    font-size: 20px;
+  }
   .vinilos h2 {
     font-size: 15px;
   }
@@ -678,6 +681,28 @@ footer .redesFooter img {
   }
   .show h2 {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inline-menu {
+    display: none;
+  }
+  .menu {
+    margin-top: 4%;
+    display: block;
+    text-align: center;
+  }
+  .menu li {
+    display: inline;
+    font-size: 1.5em;
+  }
+  .cardStyle h3 {
+    font-size: 20px;
+  }
+  .cardStyle img {
+    width: 150px;
+    height: 150px;
   }
 }
 /*# sourceMappingURL=style.css.map */
