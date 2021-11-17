@@ -83,7 +83,7 @@ h3 {
   margin: 15px;
   border-bottom: black 1.5px solid;
   input {
-    margin: 15px;
+    margin: 15px 5px 15px 20px;
     border: none;
     border-bottom: black 1.5px solid;
   }
@@ -93,7 +93,7 @@ h3 {
     background-color: $dark;
     color: white;
     border-radius: 15px;
-    margin: 15px 20px 15px 30px;
+    margin: 15px 15px 15px 5px;
     &:hover {
       background-color: $dark-grey;
       color: $dark;
@@ -417,3 +417,99 @@ footer {
 }
 
 /* Media queries */
+
+@media (max-width:1440px){
+   .containerContact{
+    
+      @include forma();
+      padding-left: 20px;
+      margin: 20px;
+      border: solid 5px black;
+      border-radius: 15px;
+      padding: 50px;
+      img {
+        width: 120px;
+        height: 120px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        .especial {
+          @include logoNombre();
+        }
+      }
+      input {
+        display: block;
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        font-size: 18px;
+        color: $dark;
+        outline: none;
+        border: none;
+        background: transparent;
+        color: $dark;
+        border-bottom: 2px solid $dark;
+      }
+    
+      label {
+        color: $dark;
+      }
+      .btn {
+        width: 150px;
+        background-color: $dark;
+        color: white;
+        border-radius: 15px;
+        margin-left: 20px;
+        &:hover {
+          background-color: $dark-grey;
+          color: $dark;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px){
+    .inline-menu {
+     input {
+       display: none;
+
+     }
+     button {
+       display: none;
+     }
+     .btn {
+       
+       @include btn();
+     }
+  }
+  .vinilos {
+    h2 {
+      font-size: 15px;
+    }
+  }
+  .libros {
+    h2 {
+      font-size: 15px;
+  }
+}
+  .memorabilia {
+    h2{
+      font-size: 15px;
+  }
+}
+  .argenblues {
+    h2 {
+      font-size: 15px;
+  }
+}
+  .show {
+    h2 {
+      font-size: 15px;
+  }
+}
+}

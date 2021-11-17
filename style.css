@@ -40,7 +40,7 @@ h3 {
 }
 
 .inline-menu input {
-  margin: 15px;
+  margin: 15px 5px 15px 20px;
   border: none;
   border-bottom: black 1.5px solid;
 }
@@ -50,7 +50,7 @@ h3 {
   background-color: #131312;
   color: white;
   border-radius: 15px;
-  margin: 15px 20px 15px 30px;
+  margin: 15px 15px 15px 5px;
 }
 
 .inline-menu button:hover {
@@ -583,4 +583,101 @@ footer .redesFooter img {
 }
 
 /* Media queries */
+@media (max-width: 1440px) {
+  .containerContact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-left: 20px;
+    margin: 20px;
+    border: solid 5px black;
+    border-radius: 15px;
+    padding: 50px;
+  }
+  .containerContact img {
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .containerContact h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .containerContact h2 .especial {
+    color: #131312;
+    font-family: "PLAYLIST";
+    font-size: 50px;
+  }
+  .containerContact input {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #131312;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #131312;
+    border-bottom: 2px solid #131312;
+  }
+  .containerContact label {
+    color: #131312;
+  }
+  .containerContact .btn {
+    width: 150px;
+    background-color: #131312;
+    color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+  }
+  .containerContact .btn:hover {
+    background-color: #565758;
+    color: #131312;
+  }
+}
+
+@media (max-width: 1024px) {
+  .inline-menu input {
+    display: none;
+  }
+  .inline-menu button {
+    display: none;
+  }
+  .inline-menu .btn {
+    width: 150px;
+    background-color: #131312;
+    color: white;
+    border-radius: 15px;
+  }
+  .inline-menu .btn:hover {
+    background-color: #565758;
+    color: #131312;
+  }
+  .vinilos h2 {
+    font-size: 15px;
+  }
+  .libros h2 {
+    font-size: 15px;
+  }
+  .memorabilia h2 {
+    font-size: 15px;
+  }
+  .argenblues h2 {
+    font-size: 15px;
+  }
+  .show h2 {
+    font-size: 15px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
