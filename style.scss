@@ -364,7 +364,7 @@ footer {
   .containerFooter {
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     border-top: solid 1.5px black;
@@ -647,7 +647,7 @@ footer {
     }
   }
   .containerFooter {
-    flex-wrap: wrap;
+    
     flex-direction: column;
   }
 
