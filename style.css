@@ -528,23 +528,23 @@ footer .containerFooter {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
   border-top: solid 1.5px black;
 }
 
 footer .nombre {
-  width: 50%;
+  width: 25%;
   margin-top: 40px;
 }
 
 footer .navegacionFooter {
-  width: 40%;
-  margin-left: 15px;
+  width: 25%;
+  margin-left: 10px;
   margin-top: 20px;
 }
 
@@ -567,7 +567,7 @@ footer .navegacionFooter a:hover {
 }
 
 footer .contactoFooter {
-  width: 40%;
+  width: 25%;
   margin-top: 20px;
 }
 
@@ -589,7 +589,7 @@ footer .contactoFooter li {
 }
 
 footer .redesFooter {
-  width: 30%;
+  width: 25%;
   margin-top: 20px;
 }
 
@@ -700,6 +700,10 @@ footer .redesFooter img {
   .show h2 {
     font-size: 15px;
   }
+  .containerFooter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 768px) {
@@ -710,39 +714,62 @@ footer .redesFooter img {
     display: none;
   }
   .vinilos {
+    position: relative;
     margin: 30px;
     padding: 30px;
   }
   .vinilos h2 {
     display: none;
   }
+  .vinilos img {
+    margin-top: 40px;
+  }
   .libros {
+    position: relative;
+    margin-top: 40px;
     margin: 30px;
     padding: 30px;
   }
   .libros h2 {
     display: none;
   }
+  .libros img {
+    margin-top: 40px;
+  }
   .memorabilia {
+    position: relative;
+    margin-top: 40px;
     margin: 30px;
     padding: 30px;
   }
   .memorabilia h2 {
     display: none;
   }
+  .memorabilia img {
+    margin-top: 40px;
+  }
   .argenblues {
+    position: relative;
+    margin-top: 40px;
     margin: 30px;
     padding: 30px;
   }
   .argenblues h2 {
     display: none;
   }
+  .argenblues img {
+    margin-top: 40px;
+  }
   .show {
+    position: relative;
     margin: 30px;
     padding: 30px;
   }
   .show h2 {
     display: none;
+  }
+  .show img {
+    margin-top: 40px;
   }
 }
 
@@ -795,6 +822,8 @@ footer .redesFooter img {
     margin: auto;
   }
   .containerFooter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
