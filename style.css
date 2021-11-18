@@ -512,6 +512,8 @@ main .show button:hover {
 /* Footer */
 footer {
   padding: 40px;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 footer .especial {
@@ -528,8 +530,8 @@ footer .containerFooter {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -537,46 +539,35 @@ footer .containerFooter {
   border-top: solid 1.5px black;
 }
 
-footer .nombre {
-  width: 25%;
-  margin-top: 40px;
-}
-
-footer .navegacionFooter {
-  width: 25%;
-  margin-left: 10px;
-  margin-top: 20px;
-}
-
-footer .navegacionFooter li {
+footer li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 15px;
 }
 
-footer .navegacionFooter a {
+footer a {
   text-decoration: none;
   margin: 10px;
   color: #131312;
   padding-top: 5px;
 }
 
-footer .navegacionFooter a:hover {
+footer a:hover {
   color: #979699;
 }
 
-footer .contactoFooter {
+.contactoFooter {
   width: 25%;
   margin-top: 20px;
 }
 
-footer .contactoFooter h3 {
+.contactoFooter h3 {
   padding-left: 30px;
   padding-bottom: 10px;
 }
 
-footer .contactoFooter li {
+.contactoFooter li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,12 +579,12 @@ footer .contactoFooter li {
   margin-top: 5px;
 }
 
-footer .redesFooter {
+.redesFooter {
   width: 25%;
   margin-top: 20px;
 }
 
-footer .redesFooter img {
+.redesFooter img {
   margin-right: 10px;
   width: 40px;
 }
@@ -699,10 +690,6 @@ footer .redesFooter img {
   }
   .show h2 {
     font-size: 15px;
-  }
-  .containerFooter {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
@@ -821,7 +808,12 @@ footer .redesFooter img {
     display: block;
     margin: auto;
   }
-  .containerFooter {
+  footer .containerFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
