@@ -34,6 +34,7 @@ h3 {
 @mixin forma {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 @mixin fontNombre {
@@ -362,6 +363,7 @@ footer {
   .containerFooter {
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     border-top: solid 1.5px black;
@@ -414,6 +416,7 @@ footer {
       width: 40px;
     }
   }
+ 
 }
 
 /* Media queries */
@@ -520,26 +523,105 @@ footer {
 }
 
 @media (max-width: 768px){
+
+  .cards {
+    display: none;
+    .cardStyle {
+      display: none;
+    }
+  }
+  .vinilos {
+    h2 {
+      display: none;
+    }
+    margin: 30px;
+    padding: 30px;
+  }
+  .libros {
+    h2 {
+      display: none;
+    }
+    margin: 30px;
+    padding: 30px;
+  }
+  .memorabilia {
+    h2 {
+      display: none;
+    }
+    margin: 30px;
+    padding: 30px;
+  }
+  .argenblues {
+    h2 {
+      display: none;
+    }
+    margin: 30px;
+    padding: 30px;
+  }
+  .show {
+    h2 {
+      display: none;
+    }
+    margin: 30px;
+    padding: 30px;
+  }
+}
+@media (max-width: 470px){
   .inline-menu {
     display: none;
   }
-//To Do
-  .menu {
-    margin-top: 4%;
-    display: block;
-    text-align: center;
-  li{
-    display: inline;
-    font-size: 1.5em;
+  header {
+    img {
+      width: 450px;
+      
+    }
   }
-}
-  .cardStyle{
-    h3 {
+  .menu {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      padding: 20px 15px;
+      z-index: 5;
+      top: 30px;
+      background-color: $dark;
+      border-radius: 15px;
+      left: 60px;
+      li {
+        list-style: none;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $light-grey;
+    }
+    &:hover .dropdown {
+      display: block;
+    }
+  }
+  .containerContact{
+    margin: 10px;
+    padding: 10px;
+    img {
+      display: none;
+    }
+    h2 {
       font-size: 20px;
     }
-    img {
-      width: 150px;
-      height: 150px;
+    border: none;
+    .btn {
+      display: block;
+      margin: auto;
     }
   }
+  .containerFooter {
+    flex-direction: column;
+  }
+
 }
+
+  
