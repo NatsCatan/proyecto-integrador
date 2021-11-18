@@ -512,8 +512,6 @@ main .show button:hover {
 /* Footer */
 footer {
   padding: 40px;
-  margin-left: 10px;
-  margin-top: 20px;
 }
 
 footer .especial {
@@ -539,35 +537,44 @@ footer .containerFooter {
   border-top: solid 1.5px black;
 }
 
-footer li {
+footer .containerFooter .nombre {
+  margin-top: 40px;
+}
+
+footer .containerFooter .navegacionFooter {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+footer .containerFooter .navegacionFooter li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 15px;
 }
 
-footer a {
+footer .containerFooter .navegacionFooter a {
   text-decoration: none;
   margin: 10px;
   color: #131312;
   padding-top: 5px;
 }
 
-footer a:hover {
+footer .containerFooter .navegacionFooter a:hover {
   color: #979699;
 }
 
-.contactoFooter {
+footer .containerFooter .contactoFooter {
   width: 25%;
   margin-top: 20px;
 }
 
-.contactoFooter h3 {
+footer .containerFooter .contactoFooter h3 {
   padding-left: 30px;
   padding-bottom: 10px;
 }
 
-.contactoFooter li {
+footer .containerFooter .contactoFooter li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,12 +586,12 @@ footer a:hover {
   margin-top: 5px;
 }
 
-.redesFooter {
+footer .containerFooter .redesFooter {
   width: 25%;
   margin-top: 20px;
 }
 
-.redesFooter img {
+footer .containerFooter .redesFooter img {
   margin-right: 10px;
   width: 40px;
 }
@@ -765,7 +772,7 @@ footer a:hover {
     display: none;
   }
   header img {
-    width: 450px;
+    width: 350px;
   }
   .menu {
     position: relative;
